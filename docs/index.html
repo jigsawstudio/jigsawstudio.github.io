@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jigsaw - تبلیغات و برندینگ</title>
+  <link href="output.css" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <style>
+    @font-face {
+      font-family: 'Kalameh';
+      src: url('https://cdn.jsdelivr.net/gh/rastikerdar/vazir-font/dist/Vazir.woff2') format('woff2');
+    }
+    body {
+      font-family: 'Kalameh', sans-serif;
+    }
+  </style>
+</head>
+<body class="bg-jigsawGray text-jigsawWhite">
+  <!-- Header -->
+  <header class="bg-jigsawYellow py-6">
+    <div class="container mx-auto flex justify-between items-center">
+      <h1 class="text-4xl font-bold">شرکت Jigsaw</h1>
+      <nav class="space-x-4">
+        <a href="#about" class="text-jigsawGray hover:text-white transition">درباره ما</a>
+        <a href="#services" class="text-jigsawGray hover:text-white transition">خدمات</a>
+        <a href="#contact" class="text-jigsawGray hover:text-white transition">تماس با ما</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="h-screen bg-jigsawGray flex flex-col justify-center items-center">
+    <h2 class="text-5xl font-bold mb-4">ما آینده برند شما را می‌سازیم</h2>
+    <p class="text-lg">متخصص در تبلیغات، برندینگ و تولید محتوا</p>
+    <a href="#contact" class="mt-6 bg-jigsawYellow text-jigsawGray px-6 py-3 rounded-lg hover:bg-white hover:text-jigsawYellow transition">با ما تماس بگیرید</a>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-20 bg-white text-jigsawGray">
+    <div class="container mx-auto text-center">
+      <h2 class="text-4xl font-bold mb-8">درباره Jigsaw</h2>
+      <p class="text-lg leading-relaxed">شرکت Jigsaw با تخصص در زمینه تبلیغات و برندینگ، به شما کمک می‌کند تا بهترین تصویر از برند خود را به جهان ارائه دهید. ما با تیمی حرفه‌ای و خلاق در کنار شما هستیم.</p>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="py-20 bg-jigsawGray text-white">
+    <div class="container mx-auto text-center">
+      <h2 class="text-4xl font-bold mb-8">خدمات ما</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="p-6 bg-jigsawYellow text-jigsawGray rounded-lg shadow-lg hover:scale-105 transition-transform">
+          <h3 class="text-2xl font-bold mb-4">تبلیغات دیجیتال</h3>
+          <p>اجرای کمپین‌های تبلیغاتی حرفه‌ای برای برند شما</p>
+        </div>
+        <div class="p-6 bg-jigsawYellow text-jigsawGray rounded-lg shadow-lg hover:scale-105 transition-transform">
+          <h3 class="text-2xl font-bold mb-4">برندینگ</h3>
+          <p>طراحی و اجرای استراتژی‌های برندینگ</p>
+        </div>
+        <div class="p-6 bg-jigsawYellow text-jigsawGray rounded-lg shadow-lg hover:scale-105 transition-transform">
+          <h3 class="text-2xl font-bold mb-4">تولید محتوا</h3>
+          <p>ایجاد محتوای خلاقانه و جذاب برای شبکه‌های اجتماعی</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-20 bg-white text-jigsawGray">
+    <div class="container mx-auto text-center">
+      <h2 class="text-4xl font-bold mb-8">تماس با ما</h2>
+      <p class="text-lg mb-4">برای اطلاعات بیشتر و همکاری با ما تماس بگیرید.</p>
+      <a href="mailto:info@jigsaw.com" class="bg-jigsawYellow text-jigsawGray px-6 py-3 rounded-lg hover:bg-jigsawGray hover:text-jigsawYellow transition">ایمیل بزنید</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-jigsawGray text-white py-4">
+    <div class="container mx-auto text-center">
+      <p>&copy; 2024 Jigsaw. تمامی حقوق محفوظ است.</p>
+    </div>
+  </footer>
+
+  <!-- GSAP Animations -->
+  <script>
+    gsap.from("header", { duration: 1, y: -100, opacity: 0 });
+    gsap.from("section", { duration: 1, opacity: 0, y: 50, stagger: 0.5 });
+    gsap.from("footer", { duration: 1, y: 100, opacity: 0 });
+  </script>
+</body>
+</html>
